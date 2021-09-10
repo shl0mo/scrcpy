@@ -22,13 +22,13 @@ Foco em:
 
 ## Requisitos
 
-O dispositivo Android requer pelo menos a API 21 (Android 5.0).
+Dispositivo Android com pelo menos a API 21 (Android 5.0).
 
-Tenha certeza de ter [ativado a depuração adb][enable-adb] no(s) seu(s) dispositivo(s).
+Certifique-se de ter [ativado a depuração adb][enable-adb] no(s) seu(s) dispositivo(s).
 
 [enable-adb]: https://developer.android.com/studio/command-line/adb.html#Enabling
 
-Em alguns dispositivos, você também precisa ativar [uma opção adicional][control] para
+Em alguns dispositivos, é necessário ativar [uma opção adicional][control] para
 controlá-lo usando teclado e mouse.
 
 [control]: https://github.com/Genymobile/scrcpy/issues/70#issuecomment-373286323
@@ -110,7 +110,7 @@ A aplicação está disponível em [Homebrew]. Apenas instale-a:
 brew install scrcpy
 ```
 
-Você precisa do `adb`, acessível pelo seu `PATH`. Se você ainda não o tem:
+É necessário ter o `adb`, acessível pelo seu `PATH`. Caso você ainda não tenha:
 
 ```bash
 # Homebrew >= 2.6.0
@@ -120,7 +120,7 @@ brew install --cask android-platform-tools
 brew cask install android-platform-tools
 ```
 
-Você também pode [compilar o app manualmente][BUILD].
+Também é possível [compilar o app manualmente][BUILD].
 
 
 ## Executar
@@ -143,8 +143,8 @@ scrcpy --help
 
 #### Reduzir tamanho
 
-Algumas vezes, é útil espelhar um dispositivo Android em uma resolução menor para
-aumentar a performance.
+Algumas vezes é útil diminuir a resolução para
+uma melhor performance.
 
 Para limitar ambos (largura e altura) para algum valor (ex: 1024):
 
@@ -153,8 +153,8 @@ scrcpy --max-size 1024
 scrcpy -m 1024  # versão curta
 ```
 
-A outra dimensão é calculada para que a proporção do dispositivo seja preservada.
-Dessa forma, um dispositivo de 1920x1080 será espelhado em 1024x576.
+A outra dimensão é automaticamente calculada e definida para que a proporção do dispositivo seja preservada.
+Dessa forma, um dispositivo de 1920x1080 será mostrado em 1024x576 pela aplicação.
 
 
 #### Mudar bit-rate
